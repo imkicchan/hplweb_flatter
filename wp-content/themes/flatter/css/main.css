@@ -1431,6 +1431,7 @@ footer .copyright .social-media li a:hover {background: #27c2aa; color: #fff; }
 /*--------------------------------------------------------------
 ## FULL WIDTH SLIDER
 --------------------------------------------------------------*/
+
 html, body {height: 100%; }
 .carousel, .item, .active {height: 100%; }
 .carousel-inner {height: 100%; }
@@ -1734,7 +1735,8 @@ html, body {height: 100%; }
   width: 100%;
   padding: 10px;
   border: 1px solid transparent;
-  transition: all 0.4s ease-in-out; }
+  transition: all 0.4s ease-in-out;
+  background-color: #27c2aa; }
 .inner-content .single-post:hover {border: 1px solid #f0f0f0; }
 .inner-content .single-post .post-title {font-size: 20px; }
 .post-title a, .post-title a:hover {color: #27c2aa;}
@@ -1755,6 +1757,9 @@ html, body {height: 100%; }
   color: #999; }
 .content h3{margin-top: 0px;}
 
+.haikei {
+  background-color: #27c2aa;
+}
 
 
 /*--------------------------------------------------------------

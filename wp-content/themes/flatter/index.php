@@ -11,9 +11,7 @@
  *
  * @package Flatter
  */
-
-get_header(); ?>
-
+ get_header(); ?>
 	<?php $status=get_theme_mod('slider_category_status'); 
 	if($status==0):?> 
 	<header id="myCarousel" class="carousel slide">
@@ -23,10 +21,10 @@ get_header(); ?>
        	<?php while($i<=$num) { ?>
             <li data-target="#myCarousel" data-slide-to="<?php echo $i;?>" class="<?php if($i==0){echo 'active';}?>"></li>
          <?php $i=$i+1;}?> 
-        </ol> 
+        </ol>
 
         <!-- Wrapper for Slides -->
-        <div class="carousel-inner">
+       <div class="carousel-inner">
         	<?php
 				$cid = get_theme_mod('slider_category_display');
 				$category_link = get_category_link($cid);
@@ -45,10 +43,10 @@ get_header(); ?>
 	            );
 	            $loop = new WP_Query($args);
 
+
 	          
 	            if ($loop->have_posts()) :  while ($loop->have_posts()) : $loop->the_post();
 	          ?>
-            
             <div class="item">
             	<div class="overlay"></div>
             	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'flatter-slider-thumb' ); ?>
@@ -66,7 +64,7 @@ get_header(); ?>
                     		<?php if(get_theme_mod('slider_button')) { ?>
                     			<span><a href="<?php echo esc_url(get_theme_mod( 'slider_button', 'http://oceanwebthemes.com' )); ?>" class="btn btn-slider" title=""><?php echo esc_attr(get_theme_mod('slider_contact_title','Contact Us'));?></a></span>
                     		<?php }?>
-                    			<span><a href="http://google.com" class="btn btn-slider" title=""><?php _e('Read More','flatter'); ?></a></span>
+                    			<span><a href="http://localhost/index.php/hpl/" class="btn btn-slider" title=""><?php _e('Read More','flatter'); ?></a></span>
                     		</div>
                     	</div>
                     </div>
@@ -118,7 +116,7 @@ get_header(); ?>
     	<div class="container">
         	<div class="row">  		
 
-				<div class="col-md-9 detail-content">
+				<div class="col-md-12 detail-content haikei">
 					<?php if ( have_posts() ) : ?>
 						<div class="masonry-3">
 							<?php if (! is_front_page() ) : ?>
@@ -144,19 +142,28 @@ get_header(); ?>
 <div class="single-post " >
 	 
 
-    <h3 class="post-title"><a href="http://localhost/index.php/2017/05/09/sportsc/">スポーツ科学とは</a></h3>
+    <h3 class="post-title"><center>HPL</center></h3>
 
-    <h6 class="post-info">5月 09 2017- POSTED BY kikuchi</h6>
+    <!--<h6 class="post-info">5月 09 2017- POSTED BY kikuchi</h6>-->
+	 <img src="http://localhost/wp-content/themes/flatter/images/hpl.jpg">
+    <!--<p>スポーツ科学とは</p>-->
 
-    <p>スポーツ科学とは</p>
-
-    <a href="http://localhost/index.php/2017/05/09/sportsc/" title="" class="btn read-more">Read More</a>
-    
+    <a href="http://localhost/index.php/hpl/" title="" class="btn read-more">Read More</a>
+    <!--
     <div class="tag-comment">
-        <span class="pull-left"><i class="fa fa-tags"></i> </span>
+        <span class="pull-left"><i class="fa fa-tags"></i></span>
 
-        <span class="pull-right"><i class="fa fa-comments"></i> <span><span class="screen-reader-text">スポーツ科学とは は</span>コメントを受け付けていません。</span></span>
-    </div>
+        <span class="pull-right"><i class="fa fa-comments"></i><span><span class="screen-reader-text">スポーツ科学とは は</span></span></span>
+    </div>-->
+</div>
+</div>
+
+<div class="post-69 post type-post status-publish format-standard hentry category-1" >	
+<div class="single-post " >
+ 	<h3 class="post-title"><center>人間工学</center></h3>
+	 <img src="http://localhost/wp-content/themes/flatter/images/hpl.jpg">
+    <a href="http://localhost/index.php/ergonomics/" title="" class="btn read-more">Read More</a>
+
 </div>
 </div>
 
@@ -164,40 +171,10 @@ get_header(); ?>
 <div class="single-post " >
 	 
 
-    <h3 class="post-title"><a href="http://localhost/index.php/2017/05/09/sportsc/">スポーツ科学とは</a></h3>
-
-    <h6 class="post-info">5月 09 2017- POSTED BY kikuchi</h6>
-
-    <p>スポーツ科学とは</p>
-
-    <a href="http://localhost/index.php/2017/05/09/sportsc/" title="" class="btn read-more">Read More</a>
-    
-    <div class="tag-comment">
-        <span class="pull-left"><i class="fa fa-tags"></i> </span>
-
-        <span class="pull-right"><i class="fa fa-comments"></i> <span><span class="screen-reader-text">スポーツ科学とは は</span>コメントを受け付けていません。</span></span>
+    <h3 class="post-title"><center>スポーツ科学</center></h3>
+		 <img src="http://localhost/wp-content/themes/flatter/images/hpl.jpg">
+    <a href="http://localhost/index.php/sportscience/" title="" class="btn read-more">Read More</a>
     </div>
-</div>
-</div>
-
-								<div class="post-69 post type-post status-publish format-standard hentry category-1" >	
-<div class="single-post " >
-	 
-
-    <h3 class="post-title"><a href="http://localhost/index.php/2017/05/09/sportsc/">スポーツ科学とは</a></h3>
-
-    <h6 class="post-info">5月 09 2017- POSTED BY kikuchi</h6>
-
-    <p>スポーツ科学とは</p>
-
-    <a href="http://localhost/index.php/2017/05/09/sportsc/" title="" class="btn read-more">Read More</a>
-    
-    <div class="tag-comment">
-        <span class="pull-left"><i class="fa fa-tags"></i> </span>
-
-        <span class="pull-right"><i class="fa fa-comments"></i> <span><span class="screen-reader-text">スポーツ科学とは は</span>コメントを受け付けていません。</span></span>
-    </div>
-</div>
 </div>
 							<?php //endwhile; ?>
 						</div>
@@ -212,7 +189,12 @@ get_header(); ?>
 				</div>
 
 				<?php get_sidebar('right');?>
+
+										<!--div class="col-md-3 detail-content">
+<p>atan</p>
+							</div>-->
 			</div>
 		</div>
+
 	</section>
 <?php get_footer(); ?>

@@ -25,7 +25,7 @@ get_header(); ?>
         </ol> 
 
         <!-- Wrapper for Slides -->
-        <div class="carousel-inner">
+        <!--<div class="carousel-inner">
         	<?php
 				$cid = get_theme_mod('slider_category_display');
 				$category_link = get_category_link($cid);
@@ -82,7 +82,7 @@ get_header(); ?>
                     	</div>
                     </div>
                 </div>
-            </div>
+            </div>-->
             <?php                 
       			endwhile;
       				wp_reset_postdata();  
