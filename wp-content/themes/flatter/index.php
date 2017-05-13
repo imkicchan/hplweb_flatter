@@ -66,7 +66,7 @@ get_header(); ?>
                     		<?php if(get_theme_mod('slider_button')) { ?>
                     			<span><a href="<?php echo esc_url(get_theme_mod( 'slider_button', 'http://oceanwebthemes.com' )); ?>" class="btn btn-slider" title=""><?php echo esc_attr(get_theme_mod('slider_contact_title','Contact Us'));?></a></span>
                     		<?php }?>
-                    			<span><a href="<?php the_permalink();?>" class="btn btn-slider" title=""><?php _e('Read More','flatter'); ?></a></span>
+                    			<span><a href="http://google.com" class="btn btn-slider" title=""><?php _e('Read More','flatter'); ?></a></span>
                     		</div>
                     	</div>
                     </div>
@@ -129,7 +129,7 @@ get_header(); ?>
 
 						
 							<?php /* Start the Loop */ ?>
-							<?php while ( have_posts() ) : the_post(); ?>
+							<?php //while ( have_posts() ) : the_post(); ?>
 
 								<?php
 
@@ -138,10 +138,68 @@ get_header(); ?>
 									 * If you want to override this in a child theme, then include a file
 									 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 									 */
-									get_template_part( 'template-parts/content', get_post_format() );
+									//get_template_part( 'template-parts/content', get_post_format() );
 								?>
+															<div class="post-69 post type-post status-publish format-standard hentry category-1" >	
+<div class="single-post " >
+	 
 
-							<?php endwhile; ?>
+    <h3 class="post-title"><a href="http://localhost/index.php/2017/05/09/sportsc/">スポーツ科学とは</a></h3>
+
+    <h6 class="post-info">5月 09 2017- POSTED BY kikuchi</h6>
+
+    <p>スポーツ科学とは</p>
+
+    <a href="http://localhost/index.php/2017/05/09/sportsc/" title="" class="btn read-more">Read More</a>
+    
+    <div class="tag-comment">
+        <span class="pull-left"><i class="fa fa-tags"></i> </span>
+
+        <span class="pull-right"><i class="fa fa-comments"></i> <span><span class="screen-reader-text">スポーツ科学とは は</span>コメントを受け付けていません。</span></span>
+    </div>
+</div>
+</div>
+
+								<div class="post-69 post type-post status-publish format-standard hentry category-1" >	
+<div class="single-post " >
+	 
+
+    <h3 class="post-title"><a href="http://localhost/index.php/2017/05/09/sportsc/">スポーツ科学とは</a></h3>
+
+    <h6 class="post-info">5月 09 2017- POSTED BY kikuchi</h6>
+
+    <p>スポーツ科学とは</p>
+
+    <a href="http://localhost/index.php/2017/05/09/sportsc/" title="" class="btn read-more">Read More</a>
+    
+    <div class="tag-comment">
+        <span class="pull-left"><i class="fa fa-tags"></i> </span>
+
+        <span class="pull-right"><i class="fa fa-comments"></i> <span><span class="screen-reader-text">スポーツ科学とは は</span>コメントを受け付けていません。</span></span>
+    </div>
+</div>
+</div>
+
+								<div class="post-69 post type-post status-publish format-standard hentry category-1" >	
+<div class="single-post " >
+	 
+
+    <h3 class="post-title"><a href="http://localhost/index.php/2017/05/09/sportsc/">スポーツ科学とは</a></h3>
+
+    <h6 class="post-info">5月 09 2017- POSTED BY kikuchi</h6>
+
+    <p>スポーツ科学とは</p>
+
+    <a href="http://localhost/index.php/2017/05/09/sportsc/" title="" class="btn read-more">Read More</a>
+    
+    <div class="tag-comment">
+        <span class="pull-left"><i class="fa fa-tags"></i> </span>
+
+        <span class="pull-right"><i class="fa fa-comments"></i> <span><span class="screen-reader-text">スポーツ科学とは は</span>コメントを受け付けていません。</span></span>
+    </div>
+</div>
+</div>
+							<?php //endwhile; ?>
 						</div>
 
 						<?php flatter_pagination_bars(); ?>
