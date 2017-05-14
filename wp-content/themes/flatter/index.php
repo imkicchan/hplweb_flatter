@@ -18,12 +18,13 @@ get_header(); ?>
 	if($status==0):?> 
 	<header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
+		<!--スライドをめくる用の●アイコンを削除
        	<ol class="carousel-indicators">
        	<?php $i = 0; $num=get_theme_mod('slider_category_display_num'); ?>
        	<?php while($i<=$num) { ?>
             <li data-target="#myCarousel" data-slide-to="<?php echo $i;?>" class="<?php if($i==0){echo 'active';}?>"></li>
          <?php $i=$i+1;}?> 
-        </ol> 
+        </ol> -->
 
         <!-- Wrapper for Slides -->
         <div class="carousel-inner">
@@ -60,13 +61,17 @@ get_header(); ?>
                 <div class="carousel-caption outer">
                  	<div class="middle">
                     	<div class="inner wow zoomIn" data-wow-duration="1.5s">
-                    		<h3><?php the_title();?></h3>
-                    		<?php the_excerpt();?>
+                    		<!--<h3><?php the_title();?></h3>タイトルを変更-->
+							<h3>Human Performance Laboratory</h3>
+                    		<?php /* the_excerpt();*/?><!--サブタイトルを変更-->
+							<h4>加藤貴昭研究室</h4>
                     		<div class="buttons text-center">
                     		<?php if(get_theme_mod('slider_button')) { ?>
                     			<span><a href="<?php echo esc_url(get_theme_mod( 'slider_button', 'http://oceanwebthemes.com' )); ?>" class="btn btn-slider" title=""><?php echo esc_attr(get_theme_mod('slider_contact_title','Contact Us'));?></a></span>
                     		<?php }?>
-                    			<span><a href="<?php the_permalink();?>" class="btn btn-slider" title=""><?php _e('Read More','flatter'); ?></a></span>
+							    <!-- About USのリンクを、固定ページ「HPLとは」にする-->
+                    			<!--<span><a href="<?php the_permalink();?>" class="btn btn-slider" title=""><?php _e('About Us','flatter'); ?></a></span>-->
+								<span><a href="http://localhost/index.php/hpl/" class="btn btn-slider" title=""><?php _e('About Us','flatter'); ?></a></span>
                     		</div>
                     	</div>
                     </div>
@@ -118,7 +123,7 @@ get_header(); ?>
     	<div class="container">
         	<div class="row">  		
 
-				<div class="col-md-9 detail-content">
+				<div class="col-md-12 detail-content">
 					<?php if ( have_posts() ) : ?>
 						<div class="masonry-3">
 							<?php if (! is_front_page() ) : ?>
@@ -127,9 +132,9 @@ get_header(); ?>
 								</header>
 							<?php endif; ?>
 
-						
+						<!--投稿ページの表示を削除-->
 							<?php /* Start the Loop */ ?>
-							<?php while ( have_posts() ) : the_post(); ?>
+							<?php //while ( have_posts() ) : the_post(); ?>
 
 								<?php
 
@@ -138,12 +143,64 @@ get_header(); ?>
 									 * If you want to override this in a child theme, then include a file
 									 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 									 */
-									get_template_part( 'template-parts/content', get_post_format() );
+									//get_template_part( 'template-parts/content', get_post_format() );
 								?>
 
-							<?php endwhile; ?>
-						</div>
 
+<!--ここから〜トップページに固定ページ3つを追加-->
+<!--<div class="post-69 post type-post status-publish format-standard hentry category-1" >-->
+
+	<!--hentryを削除-->
+<div class="post-69 post type-post status-publish format-standard category-1" >
+
+<div class="single-post " >
+
+
+    <h3 class="post-title"><center><font color="grey">HPL</font></center></h3>
+
+    <!--<h6 class="post-info">5月 09 2017- POSTED BY kikuchi</h6>-->
+	 <img src="http://localhost/wp-content/themes/flatter/images/hpl.jpg">
+    <!--<p>スポーツ科学とは</p>-->
+
+    <!--<div align="right"><a href="http://localhost/index.php/hpl/" title="" class="btn read-more">Read More</a></div>-->
+	    <div align="right"><a href="http://localhost/index.php/hpl/" title="" class="btn read-more">Read More</a></div>
+    <!--
+    <div class="tag-comment">
+        <span class="pull-left"><i class="fa fa-tags"></i></span>
+
+        <span class="pull-right"><i class="fa fa-comments"></i><span><span class="screen-reader-text">スポーツ科学とは は</span></span></span>
+    </div>-->
+</div>
+</div>
+
+<div class="post-69 post type-post status-publish format-standard category-1" >
+<div class="single-post " >
+ 	<h3 class="post-title"><font color="grey"><center>人間工学</font></center></h3>
+	 <img src="http://localhost/wp-content/themes/flatter/images/hpl.jpg">
+    <div align="right"><a href="http://localhost/index.php/ergonomics/" title="" class="btn read-more">Read More</a></div>
+
+</div>
+</div>
+
+<div class="post-69 post type-post status-publish format-standard category-1" >
+<div class="single-post " >
+    <h3 class="post-title"><font color="grey"><center>スポーツ科学</font></center></h3>
+		 <img src="http://localhost/wp-content/themes/flatter/images/hpl.jpg">
+    <div align="right"><a href="http://localhost/index.php/sportscience/" title="" class="btn read-more">Read More</a></div>
+    </div>
+</div>
+
+<!--ここまで-->
+
+
+
+
+
+
+							<?php //endwhile; ?>
+						</div>
+						
+						
 						<?php flatter_pagination_bars(); ?>
 
 						<?php else : ?>
