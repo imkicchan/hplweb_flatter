@@ -1768,7 +1768,11 @@ html, body {height: 100%; }
 /*--------------------------------------------------------------
 ## BLOG PAGE
 --------------------------------------------------------------*/
-/*トップページの背景をグリーンにしたいときは,.inner-contentの中に,backgroun;#27c2aa;と追記*/
+/*トップページの背景をグリーンにしたいときは,.inner-contentの中に,background:#27c2aa;と追記*/
+.toppage-inner-content{
+  padding-bottom: 40px !important;
+  background:#27c2aa !important;
+}
 .inner-content {
   padding-bottom: 40px;
   background:#EEEEEE;

@@ -119,7 +119,7 @@ get_header(); ?>
 	<?php endif;?>
 <?php endif;?>
 
-	<section class="inner-content">
+	<section class="inner-content toppage-inner-content">
     	<div class="container">
         	<div class="row">  		
 
@@ -156,7 +156,7 @@ get_header(); ?>
 <div class="single-post " >
 
 
-    <h3 class="post-title"><center><font color="grey">HPL</font></center></h3>
+    <h3 class="post-title"><center><font color="#EEEEEE">HPL</font></center></h3>
 
     <!--<h6 class="post-info">5月 09 2017- POSTED BY kikuchi</h6>-->
 	 <img src="http://localhost/wp-content/themes/flatter/images/hpl.jpg">
@@ -175,7 +175,7 @@ get_header(); ?>
 
 <div class="post-69 post type-post status-publish format-standard category-1" >
 <div class="single-post " >
- 	<h3 class="post-title"><font color="grey"><center>人間工学</font></center></h3>
+ 	<h3 class="post-title"><font color="#EEEEEE"><center>人間工学</font></center></h3>
 	 <img src="http://localhost/wp-content/themes/flatter/images/hpl.jpg">
     <div align="right"><a href="http://localhost/index.php/ergonomics/" title="" class="btn read-more">Read More</a></div>
 
@@ -184,7 +184,7 @@ get_header(); ?>
 
 <div class="post-69 post type-post status-publish format-standard category-1" >
 <div class="single-post " >
-    <h3 class="post-title"><font color="grey"><center>スポーツ科学</font></center></h3>
+    <h3 class="post-title"><font color="#EEEEEE"><center>スポーツ科学</font></center></h3>
 		 <img src="http://localhost/wp-content/themes/flatter/images/hpl.jpg">
     <div align="right"><a href="http://localhost/index.php/sportscience/" title="" class="btn read-more">Read More</a></div>
     </div>
@@ -213,5 +213,28 @@ get_header(); ?>
 				<?php get_sidebar('right');?>
 			</div>
 		</div>
+	</section>
+
+<!--お知らせセクションを追加-->
+	<section>
+		<section class="inner-content">
+    	<div class="container">
+        	<div class="row">  		
+				<div class="col-md-12 detail-content">
+					<h3>お知らせセクションはここに。</h3>
+<!--新着記事を表示させるためのループ-
+<?php $my_query = new WP_Query('&cat=0'); ?>
+<?php if ($my_query->have_posts()) : ?>
+    <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+ 
+        新着記事の内容
+    
+    <?php endwhile; ?>
+<?php endif; ?>
+<?php wp_reset_postdata(); ?>-->
+
+		</div>
+			</div>
+				</div>
 	</section>
 <?php get_footer(); ?>
