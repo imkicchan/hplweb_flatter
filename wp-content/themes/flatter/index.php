@@ -221,18 +221,36 @@ get_header(); ?>
     	<div class="container">
         	<div class="row">  		
 				<div class="col-md-12 detail-content">
-					<h3>お知らせセクションはここに。</h3>
-<!--新着記事を表示させるためのループ-
-<?php $my_query = new WP_Query('&cat=0'); ?>
-<?php if ($my_query->have_posts()) : ?>
-    <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
- 
-        新着記事の内容
-    
-    <?php endwhile; ?>
-<?php endif; ?>
-<?php wp_reset_postdata(); ?>-->
+					<div class="news-section">
+					<h3 class="aaa">News</h3>
 
+<!--お知らせ表示開始-->
+<?php
+global $post; $lastposts = get_posts('numberposts=5&cat=0'); //表示件数とカテゴリID
+foreach($lastposts as $post) :
+setup_postdata($post);
+$post_title = $post->post_title;
+if(mb_strlen($post_title)>40) { //記事タイトルの文字数
+	$post_title = mb_substr($post_title,0,40).'...';
+}
+?>
+<dl class="info_sample">
+<dt><?php echo date("Y.m.d  ", strtotime($post->post_date)); ?></dt>
+<dd>
+<?php
+      $days=30; //Newをつける日数
+      $today=date_i18n('U'); $entry=get_the_time('U');
+      $diff1=date('U',($today - $entry))/86400;
+      if ($days > $diff1){
+        echo'<font color="F26964">New!</font>';
+         }
+?>
+<a href="<?php echo get_permalink( get_the_ID() ); ?>" id="post-<?php the_ID(); ?>"> <?php echo $post_title; ?></a></dd>
+</dl>
+<?php endforeach; ?>
+<!--お知らせ表示ここまで-->
+
+    </div>
 		</div>
 			</div>
 				</div>
