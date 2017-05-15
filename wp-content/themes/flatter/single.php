@@ -33,7 +33,7 @@ get_header(); ?>
 					$class = 'col-md-6';
 					$sidebar =  get_theme_mod('single_post_sidebar_position',__('right','flatter'));
 					 if($sidebar != 'both'){
-							$class = 'col-md-9';
+							$class = 'col-md-12';
 					}
 				?>          
 					

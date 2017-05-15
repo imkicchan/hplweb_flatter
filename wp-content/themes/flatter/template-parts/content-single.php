@@ -27,9 +27,9 @@
         ?> 
 
         <div class="post-info">
-            <span class="pull-left"><?php echo esc_attr( get_the_date('M d Y') );?><?php _e('- POSTED BY','flatter'); ?> <?php echo esc_html( get_the_author_meta('display_name') );?></span>
-            
-            <span class="pull-right"><i class="fa fa-tags"></i> <?php the_tags(); ?> &nbsp;<i class="fa fa-comments"></i> <?php comments_popup_link(esc_html__( '0 Comment', 'flatter' ),esc_html__( '1 Comment', 'flatter' ), esc_html__( '% Comment', 'flatter' ));?></span>
+			<!--投稿ページの、コメントを受け付けませんと、Posted by ◯◯を表示しない。-->
+            <!--<span class="pull-left"><?php echo esc_attr( get_the_date('M d Y') );?><?php _e('- POSTED BY','flatter'); ?> <?php echo esc_html( get_the_author_meta('display_name') );?></span>-->
+            <!--<span class="pull-right"><i class="fa fa-tags"></i> <?php the_tags(); ?> &nbsp;<i class="fa fa-comments"></i> <?php comments_popup_link(esc_html__( '0 Comment', 'flatter' ),esc_html__( '1 Comment', 'flatter' ), esc_html__( '% Comment', 'flatter' ));?></span>-->
         </div>
 
         <div class="clearfix"></div>
