@@ -159,7 +159,7 @@ get_header(); ?>
     <h3 class="post-title"><center><font color="#EEEEEE">HPL</font></center></h3>
 
     <!--<h6 class="post-info">5月 09 2017- POSTED BY kikuchi</h6>-->
-	 <img src="http://localhost/wp-content/themes/flatter/images/hpl.jpg">
+	 <img src="http://localhost/wp-content/uploads/2017/05/横から見た目のアイコン素材.png" class="toppage-image">
     <!--<p>スポーツ科学とは</p>-->
 
     <!--<div align="right"><a href="http://localhost/index.php/hpl/" title="" class="btn read-more">Read More</a></div>-->
@@ -176,7 +176,7 @@ get_header(); ?>
 <div class="post-69 post type-post status-publish format-standard category-1" >
 <div class="single-post " >
  	<h3 class="post-title"><font color="#EEEEEE"><center>人間工学</font></center></h3>
-	 <img src="http://localhost/wp-content/themes/flatter/images/hpl.jpg">
+	 <img src="http://localhost/wp-content/uploads/2017/05/ハートのマーク2.png"  class="toppage-image">
     <div align="right"><a href="http://localhost/index.php/ergonomics/" title="" class="btn read-more">Read More</a></div>
 
 </div>
@@ -185,7 +185,7 @@ get_header(); ?>
 <div class="post-69 post type-post status-publish format-standard category-1" >
 <div class="single-post " >
     <h3 class="post-title"><font color="#EEEEEE"><center>スポーツ科学</font></center></h3>
-		 <img src="http://localhost/wp-content/themes/flatter/images/hpl.jpg">
+		 <img src="http://localhost/wp-content/uploads/2017/05/スポーツシューズアイコン1.png" class="toppage-image">
     <div align="right"><a href="http://localhost/index.php/sportscience/" title="" class="btn read-more">Read More</a></div>
     </div>
 </div>
