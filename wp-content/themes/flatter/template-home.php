@@ -53,7 +53,7 @@ get_header(); ?>
             	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'flatter-slider-thumb' ); ?>
 				<div class="fill" style="background-image: url( <?php if ( has_post_thumbnail() ) {
 					echo $image[0]; } else { ?>
-				<?php echo esc_url( get_template_directory_uri());?>/images/hpl.jpg <?php } ?> )">
+				<?php echo esc_url( get_template_directory_uri());?>/images/hpl_top.jpg <?php } ?> )">
                 </div>
                 
                 <div class="carousel-caption outer">

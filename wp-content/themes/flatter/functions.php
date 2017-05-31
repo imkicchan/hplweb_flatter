@@ -209,9 +209,15 @@ if ( ! function_exists( 'flatter_post_nav' ) ) :
 		
 		<nav>
             <ul class="pager">                    
-			<?php
+			<!--<?php
 				previous_post_link( '<li class="previous">%link</li>', _x( '<i class="fa fa-angle-left"></i> Previous', 'Previous post link', 'flatter' ) );
 				next_post_link(     '<li class="next">%link</li>',     _x( 'Next <i class="fa fa-angle-right"></i>', 'Next post link',     'flatter' ) );
+			?>-->
+
+			<!--投稿ページのPreviousとNextをシンプルに<>だけで表した-->
+			<?php
+				previous_post_link( '<li class="previous">%link</li>', _x( '<i class="fa fa-angle-left"></i> ', 'Previous post link', 'flatter' ) );
+				next_post_link(     '<li class="next">%link</li>',     _x( ' <i class="fa fa-angle-right"></i>', 'Next post link',     'flatter' ) );
 			?>
 			</ul>
 		</nav><!-- .nav-links -->

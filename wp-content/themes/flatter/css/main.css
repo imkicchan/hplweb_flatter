@@ -33,6 +33,36 @@ menuRibbon {
 	line-height:140%;
 	font-weight:bold;
 }*/
+
+/*.a-box{
+  width:300px;
+  float:left;
+}
+
+.b-box{
+  float:right;
+  width:300px;
+}*/
+
+.bbb {
+	position: relative;
+	padding-bottom: .5em;
+	border-bottom: 4px solid #ccc;
+}
+.bbb::after {
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	z-index: 2;
+	content: '';
+	width: 20%;
+	height: 4px;
+	background-color: #27c2aa;
+}
+
+ 
+
+
 /*--------------------------------------------------------------
 h3には、タイトルに装飾をつける
 --------------------------------------------------------------*/
@@ -42,14 +72,16 @@ h3には、タイトルに装飾をつける
     padding: 0.8em;
     background: #27c2aa;
     color: #fff;
-    font-size: 1.143em;
-    font-weight: bold;
+    font-size: 1.3em;
+    /*font-weight: bold;*/
+    text-align: center;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
 }
- 
-.aaa:after{
+
+
+/*.aaa:after{
     position: absolute;
     bottom: -15px;
     left: 10%;
@@ -60,7 +92,7 @@ h3には、タイトルに装飾をつける
     border-right: 15px solid transparent;
     border-bottom: 0;
     content: "";
-}
+}*/
 
 /*
 toppageのイメージを真ん中に表示
@@ -943,7 +975,7 @@ footer li {
 
 /*各ページのレイアウトを真ん中に揃えた*/
 .hentry {
-margin:5% 12%;
+margin:5% 25%;
 }
 
 .byline,
@@ -1917,7 +1949,8 @@ html, body {height: 100%; }
   font-size: 20px;
   padding: 1px 20px;
   border-radius: 3px;
-  color: #27c2aa; }
+  background-color: #27c2aa;
+  color: #ffffff; }
 
 .single-page .pagination {margin-top: 30px; }
 .pagination {

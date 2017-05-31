@@ -55,7 +55,7 @@ get_header(); ?>
             	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'flatter-slider-thumb' ); ?>
 				<div class="fill" style="background-image: url( <?php if ( has_post_thumbnail() ) {
 					echo $image[0]; } else { ?>
-				<?php echo esc_url( get_template_directory_uri());?>/images/hpl.jpg <?php } ?> )">
+				<?php echo esc_url( get_template_directory_uri());?>/images/hpl_top.jpg <?php } ?> )">
                 </div>
                 
                 <div class="carousel-caption outer">
@@ -160,7 +160,7 @@ get_header(); ?>
 
     <!--<h6 class="post-info">5月 09 2017- POSTED BY kikuchi</h6>-->
 	 <img src="http://localhost/wp-content/uploads/2017/05/横から見た目のアイコン素材.png" class="toppage-image">
-    <!--<p>スポーツ科学とは</p>-->
+    <!--<p>スポーツ心理学とは</p>-->
 
     <!--<div align="right"><a href="http://localhost/index.php/hpl/" title="" class="btn read-more">Read More</a></div>-->
 	    <div align="center"><div style="margin-top : 20px"><a href="http://localhost/index.php/hpl/" title="" class="btn read-more">Read More</a></div></div>
@@ -184,7 +184,7 @@ get_header(); ?>
 
 <div class="post-69 post type-post status-publish format-standard category-1" >
 <div class="single-post " >
-    <h3 class="post-title"><font color="#EEEEEE"><center>スポーツ科学</font></center></h3>
+    <h3 class="post-title"><font color="#EEEEEE"><center>スポーツ心理学</font></center></h3>
 		 <img src="http://localhost/wp-content/uploads/2017/05/スポーツシューズアイコン1.png" class="toppage-image">
     <div align="center"><div style="margin-top : 20px"><a href="http://localhost/index.php/sportscience/" title="" class="btn read-more">Read More</a></div></div>
     </div>
@@ -231,7 +231,7 @@ foreach($lastposts as $post) :
 setup_postdata($post);
 $post_title = $post->post_title;
 if(mb_strlen($post_title)>40) { //記事タイトルの文字数
-	$post_title = mb_substr($post_title,0,40).'...';
+	$post_title = mb_substr($post_title,0,50).'...';
 }
 ?>
 <dl class="info_sample">

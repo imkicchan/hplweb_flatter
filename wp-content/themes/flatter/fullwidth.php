@@ -16,7 +16,7 @@ get_header(); ?>
 
 
 
-	<section class="page-header" style="background-image: url( <?php if ( get_header_image() ) { header_image(); } else { ?> <?php echo esc_url( get_template_directory_uri());?>/images/hpl.jpg <?php } ?> )">
+	<section class="page-header" style="background-image: url( <?php if ( get_header_image() ) { header_image(); } else { ?> <?php echo esc_url( get_template_directory_uri());?>/images/hpl_top.jpg <?php } ?> )">
 	    <div class="container">
 	        <div class="row">
 	            <div class="col-sm-12">
